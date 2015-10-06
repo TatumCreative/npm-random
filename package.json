@@ -1,0 +1,30 @@
+{
+  "name": "@tatumcreative/random",
+  "version": "1.0.0",
+  "description": "A seeded random value, with an optional range.",
+  "main": "random.js",
+  "scripts": {
+    "test": "browserify test.js | node | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatumcreative/npm-random.git"
+  },
+  "keywords": [
+    "random",
+    "seed"
+  ],
+  "author": "Greg Tatum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tatumcreative/npm-random/issues"
+  },
+  "homepage": "https://github.com/tatumcreative/npm-random#readme",
+  "dependencies": {
+    "seedrandom": "^2.4.2"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.2.1"
+  }
+}
