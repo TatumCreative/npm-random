@@ -1,10 +1,8 @@
-var SeedRandom = require('seedrandom')
+var Alea = require('./prng/alea')
 
-module.exports = function seededRandomFn( seed ) {
+module.exports = function seededRandomFn(/* seed */) {
 	
-	seed = seed || "redherring" + Math.random()
-	
-	var random = SeedRandom( seed )
+	var random = Alea.apply(this, arguments)
 	
 	return function seededRandom( min, max, isBoolean ) {
 		

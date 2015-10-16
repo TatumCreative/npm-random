@@ -57,4 +57,19 @@ Test("random", function(t) {
 		}
 	})
 	
+	t.test("multiple seeds", function(t) {
+		
+		var randomA = Random("foo", "bar")
+		var randomB = Random("foo", "baz")
+		
+		t.plan( samples )
+		
+		for( var i=0; i < samples; i++ ) {
+			var valueA = randomA(5, 10)
+			var valueB = randomB(5, 10)
+			
+			t.notEqual( valueA, valueB )
+		}
+	})
+	
 })

@@ -16,3 +16,10 @@ Creates a random number generated with an optional seed. Random values can be ge
 	
 	// 5 - 10
 	random(5, 10, true)
+
+## Types of seeds
+
+	var seededByDate = Random()
+	var seededByNumber = Random( 1 )
+	var seededByString = Random( "hello" )
+	var seededByMultipleArgs = Random( "yellow", Math.random(), +new Date() )

@@ -20,9 +20,7 @@
     "url": "https://github.com/tatumcreative/npm-random/issues"
   },
   "homepage": "https://github.com/tatumcreative/npm-random#readme",
-  "dependencies": {
-    "seedrandom": "^2.4.2"
-  },
+  "dependencies": {},
   "devDependencies": {
     "faucet": "0.0.1",
     "tape": "^4.2.1"
