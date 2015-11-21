@@ -1,5 +1,8 @@
 # Random
 
+[![build status][travis-image]][travis-url]
+[![stability][stability-image]][stability-url]
+
 Creates a random number generated with an optional seed. Random values can be generated on a range, and as a boolean.
 
 ## Usage
@@ -23,3 +26,8 @@ Creates a random number generated with an optional seed. Random values can be ge
 	var seededByNumber = Random( 1 )
 	var seededByString = Random( "hello" )
 	var seededByMultipleArgs = Random( "yellow", Math.random(), +new Date() )
+
+[stability-image]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
+[stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index
+[travis-image]: https://img.shields.io/travis/TatumCreative/npm-random/master.svg?style=flat-square
+[travis-url]: http://travis-ci.org/TatumCreative/npm-random
